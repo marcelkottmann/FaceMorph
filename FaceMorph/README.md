@@ -1,30 +1,6 @@
-# Face Morphing Docker Image
-Credits for face morphing script: https://github.com/valillon/FaceMorph
-
-## Usage
-Place two facial images in `input`-folder. Then start command
-
-    ./run_morphing_with_images <image1> <image2> <fps> <duration_in_ms>
-
-Example:
-    ./run_morphing_with_images input/frida-paint.jpg input/frida-crop.png 30 3000
-
-Outputs a mp4 file, which morphs faces of two images:
-![](./frida.gif)
-
-
-## Build docker image
-
-    ./build.sh
-
-
-Original README of [FaceMorph](https://github.com/valillon/FaceMorph):
-
----
-
 # Face Morphing
 
-![](./FaceMorph/example/van_gogh-paul_goughin.gif)
+![](./example/van_gogh-paul_goughin.gif)
 
 This code generates a morphing effect between two faces.		
 1. Facial landmarks recognition in both faces ([Dlib](http://dlib.net)).	
@@ -111,8 +87,8 @@ for (f, a) in enumerate(np.linspace(0,100,n_frames)) :
 
 ## How to save the Delaunay triangles
 
-![](./FaceMorph/example/van_gogh_delaunay.jpg)
-![](./FaceMorph/example/van_gogh_voronoi.jpg)
+![](./example/van_gogh_delaunay.jpg)
+![](./example/van_gogh_voronoi.jpg)
 
 Run the script with the desired image as input.		
 Delaunay and Voronoi segmentations are saved next to the input image.		
